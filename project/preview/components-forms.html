@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{padding:24px;background:#FAFBFB;display:flex;gap:18px;flex-wrap:wrap}
+  .field{display:flex;flex-direction:column;gap:6px;width:260px}
+  .lbl{font:500 13px/18px var(--font-sans);color:var(--fg-1)}
+  .inp{font:400 14px/20px var(--font-sans);padding:9px 12px;border-radius:8px;border:1px solid var(--border-strong);background:white;color:var(--fg-1);transition:all var(--dur) var(--ease)}
+  .inp:focus{outline:none;border-color:var(--brand);box-shadow:var(--ring-focus)}
+  .help{font:400 12px/16px var(--font-sans);color:var(--fg-3)}
+  .err .inp{border-color:var(--danger)}
+  .err .help{color:var(--danger)}
+  .switch{display:flex;align-items:center;gap:10px}
+  .toggle{width:36px;height:20px;background:var(--n-50);border-radius:999px;position:relative;cursor:pointer;transition:all var(--dur) var(--ease)}
+  .toggle::after{content:"";position:absolute;width:16px;height:16px;background:white;border-radius:999px;top:2px;left:2px;box-shadow:var(--shadow-sm);transition:all var(--dur) var(--ease)}
+  .toggle.on{background:var(--brand)}
+  .toggle.on::after{left:18px}
+  .check{display:flex;align-items:center;gap:8px;font:500 13px/18px var(--font-sans)}
+  .box{width:18px;height:18px;border-radius:5px;border:1px solid var(--border-strong);background:white;display:inline-flex;align-items:center;justify-content:center}
+  .box.on{background:var(--brand);border-color:var(--brand);color:white}
+</style></head><body>
+<div class="field"><span class="lbl">Название договора</span><input class="inp" value="Рамочный договор — Acme Corp"></div>
+<div class="field"><span class="lbl">Контрагент</span><input class="inp" placeholder="Введите название стороны"></div>
+<div class="field err"><span class="lbl">Дата вступления в силу</span><input class="inp" value="32 / 13 / 25"><span class="help">Используйте формат ДД / ММ / ГГ.</span></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+  <div class="switch"><div class="toggle on"></div><span class="lbl">Авто-пометка рискованных пунктов</span></div>
+  <div class="switch"><div class="toggle"></div><span class="lbl">Сравнивать с моим плейбуком</span></div>
+  <div class="check"><span class="box on"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>У меня есть полномочия подписывать</div>
+  <div class="check"><span class="box"></span>Уведомлять юрисконсульта</div>
+</div>
+</body></html>

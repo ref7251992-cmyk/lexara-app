@@ -1,0 +1,77 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --paper: #F4F1EA; }
+  html, body { margin: 0; }
+  body {
+    padding: 28px;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 18px;
+    align-items: stretch;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .panel {
+    border-radius: 14px;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 92px;
+  }
+  .light { background: #FFFFFF; box-shadow: 0 1px 0 rgba(10,10,18,0.04), 0 1px 2px rgba(10,10,18,0.04); }
+  .dark  { background: #0A0A12; }
+  .lockup {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .wordmark {
+    font: 500 30px/1 'Source Serif 4', Georgia, serif;
+    letter-spacing: 0.01em;
+  }
+  .light .wordmark { color: #0A0A12; }
+  .dark  .wordmark { color: #FFFFFF; }
+  .meta {
+    margin-left: auto;
+    font: 500 10px/1.3 ui-monospace, 'SF Mono', Menlo, monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .light .meta { color: #0A0A12; }
+  .dark .meta  { color: #FFFFFF; }
+  .swatch-row {
+    grid-column: 1 / -1;
+    display: flex; gap: 0;
+    border-radius: 10px; overflow: hidden;
+    height: 28px;
+  }
+  .sw { flex: 1; }
+</style>
+</head>
+<body>
+  <div class="panel light">
+    <div class="lockup">
+      <img src="../assets/lexara-mark.svg" width="36" height="36" alt="">
+      <span class="wordmark">Lexara</span>
+    </div>
+    <span class="meta">primary</span>
+  </div>
+  <div class="panel dark">
+    <div class="lockup">
+      <img src="../assets/lexara-mark.svg" width="36" height="36" alt="" style="filter:invert(1) hue-rotate(180deg)">
+      <span class="wordmark">Lexara</span>
+    </div>
+    <span class="meta">inverse</span>
+  </div>
+  <div class="swatch-row">
+    <div class="sw" style="background:#3D3FE2"></div>
+    <div class="sw" style="background:#0A0A12"></div>
+    <div class="sw" style="background:#F4F1EA"></div>
+    <div class="sw" style="background:#FFFFFF;border:1px solid rgba(0,0,0,0.06)"></div>
+  </div>
+</body></html>

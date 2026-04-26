@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{padding:24px;background:#FAFBFB;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .btn{appearance:none;border:0;cursor:pointer;font:500 14px/20px var(--font-sans);padding:8px 14px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;transition:all var(--dur) var(--ease)}
+  .b-primary{background:var(--brand);color:white;box-shadow:0 1px 0 rgba(0,0,0,0.06),inset 0 1px 0 rgba(255,255,255,0.18)}
+  .b-primary:hover{background:var(--brand-600)}
+  .b-secondary{background:white;color:var(--fg-1);border:1px solid var(--border-strong);box-shadow:var(--shadow-sm)}
+  .b-secondary:hover{background:var(--n-20)}
+  .b-ghost{background:transparent;color:var(--fg-1)}
+  .b-ghost:hover{background:var(--n-30)}
+  .b-danger{background:var(--danger);color:white}
+  .b-glass{background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,.25));border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(20px);color:var(--fg-1);box-shadow:var(--shadow-glass)}
+  .b-lg{font-size:15px;padding:10px 18px;border-radius:10px}
+  .b-sm{font-size:13px;padding:6px 10px}
+</style></head><body>
+<button class="btn b-primary">Анализ договора</button>
+<button class="btn b-secondary">Отмена</button>
+<button class="btn b-ghost">Пропустить</button>
+<button class="btn b-danger">Отклонить пункт</button>
+<button class="btn b-glass">Открыть просмотр</button>
+<button class="btn b-primary b-lg">Подписать и отправить</button>
+<button class="btn b-secondary b-sm">Экспорт PDF</button>
+<button class="btn b-primary" disabled style="opacity:.5;cursor:not-allowed">Недоступно</button>
+</body></html>
