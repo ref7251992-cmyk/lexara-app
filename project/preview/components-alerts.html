@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{padding:24px;background:#FAFBFB;display:flex;flex-direction:column;gap:14px}
+  .alert{display:flex;gap:12px;padding:14px 16px;border-radius:12px;border:1px solid;align-items:flex-start}
+  .alert .ic{flex:0 0 20px;display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:999px;color:white;font:600 12px/12px var(--font-sans)}
+  .ttl{font:600 14px/20px var(--font-sans)}
+  .body{font:400 13px/18px var(--font-sans);margin-top:2px}
+  .danger{background:#FCE4E8;border-color:#F2C0CB;color:#7A0017}
+  .danger .ic{background:#B00020}
+  .warn{background:#FFEEDF;border-color:#F4D2B6;color:#8A3000}
+  .warn .ic{background:#C54600}
+  .ok{background:#E5F4E5;border-color:#C7E2C7;color:#005C00}
+  .ok .ic{background:#007D00}
+  .info{background:#E3EEFB;border-color:#BAD4F1;color:#0A4F9F}
+  .info .ic{background:#0D69D4}
+</style></head><body>
+<div class="alert danger"><span class="ic">!</span><div><div class="ttl">Высокий риск: §7.4 ответственность</div><div class="body">Контрагент ограничивает ответственность 6 месяцами. Медиана по рынку для такого размера — 24.</div></div></div>
+<div class="alert warn"><span class="ic">!</span><div><div class="ttl">Нетипичный срок переживания</div><div class="body">Срок 36 месяцев редко встречается у поставщиков до $50k. Согласуйте с юристом.</div></div></div>
+<div class="alert ok"><span class="ic">✓</span><div><div class="ttl">Контрформулировка готова</div><div class="body">Lexara подготовила правки по пунктам 7.4 и 12.1. Проверьте перед отправкой.</div></div></div>
+<div class="alert info"><span class="ic">i</span><div><div class="ttl">В переговорах</div><div class="body">Acme ответил 23 минуты назад. Новая версия поставлена в очередь на анализ.</div></div></div>
+</body></html>

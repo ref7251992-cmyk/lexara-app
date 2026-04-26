@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{padding:20px;background:#FAFBFB}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .row{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--border)}
+  .dot{width:14px;height:14px;border-radius:999px}
+  .pill{padding:4px 10px;border-radius:999px;font:500 12px/16px var(--font-sans)}
+  .meta{display:flex;flex-direction:column;flex:1}
+  .nm{font:600 13px/18px var(--font-sans);color:var(--fg-1)}
+  .hx{font:500 11px/14px var(--font-mono);color:var(--fg-2)}
+</style></head><body>
+<div class="grid">
+  <div class="row" style="background:#E5F4E5"><span class="dot" style="background:#007D00"></span><div class="meta"><span class="nm">Успех</span><span class="hx">#007D00 · #E5F4E5</span></div><span class="pill" style="background:#007D00;color:white">Подписан</span></div>
+  <div class="row" style="background:#FFEEDF"><span class="dot" style="background:#C54600"></span><div class="meta"><span class="nm">Внимание</span><span class="hx">#C54600 · #FFEEDF</span></div><span class="pill" style="background:#C54600;color:white">Проверка</span></div>
+  <div class="row" style="background:#FCE4E8"><span class="dot" style="background:#B00020"></span><div class="meta"><span class="nm">Опасность</span><span class="hx">#B00020 · #FCE4E8</span></div><span class="pill" style="background:#B00020;color:white">Риск</span></div>
+  <div class="row" style="background:#E3EEFB"><span class="dot" style="background:#0D69D4"></span><div class="meta"><span class="nm">Информация</span><span class="hx">#0D69D4 · #E3EEFB</span></div><span class="pill" style="background:#0D69D4;color:white">В работе</span></div>
+</div>
+</body></html>
